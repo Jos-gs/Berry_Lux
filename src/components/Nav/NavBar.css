@@ -1,35 +1,84 @@
-/* src/components/Nav/NavBar.css */
 .navbar {
-  background-color: #ffffff;
-  color: #4b2e2e;
+  background-color: #F3F0EA;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
+  padding: 2.5rem 2rem;
+  position: relative; /* importante para posicionar el logo */
   z-index: 999;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
-.logo img {
-  height: 60px;
-  object-fit: contain;
+  width: 100%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-.nav-links li a {
+.nav-link {
   text-decoration: none;
+  font-size: 1rem;
   font-weight: 600;
-  color: #4b2e2e;
-  transition: color 0.3s ease;
+  color: #000;
+  font-family: 'Helvetica', sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-link:hover {
   color: #bb2649;
+  transform: translateY(-2px);
+}
+
+/* Logo centrado y sobresaliente hacia abajo */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  bottom: -35px; /* sobresale hacia abajo */
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.logo-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logo-button img {
+  height: 170px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo-button:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo-container {
+    position: relative;
+    bottom: auto;
+    transform: none;
+    left: auto;
+    margin-top: 1rem;
+  }
+
+  .logo-button img {
+    height: 80px;
+  }
 }

@@ -1,21 +1,27 @@
-// src/components/Nav/NavBar.jsx
 import React from 'react';
 import './NavBar.css';
+import logo from '../../assets/logo.png'; // Asegúrate de que sea el nuevo logo
 
 const NavBar = () => {
   return (
     <nav className="navbar">
-      
-      <ul className="nav-links">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <div className="logo">
-        <img src="../../assets/logo.png" alt="Berry Lux Logo" /> {/* asegúrate de tener este logo */}
-      </div>
-        <li><a href="#redes">Redes</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <div className="nav-links left">
+    <a href="#productos" className="nav-link">Site name</a>
+    <a href="#servicios" className="nav-link">Site name</a>
+  </div>
+<div className="logo-container">
+    <button className="logo-button" onClick={() => window.location.href='#home'}>
+      <img src={logo} alt="Inicio" />
+    </button>
+  </div>
+  <div className="nav-links right">
+    <a href="#redes" className="nav-link">Site name</a>
+    <a href="#contacto" className="nav-link">Site name</a>
+  </div>
+
+  
+</nav>
+
   );
 };
 
