@@ -107,15 +107,15 @@ const Home = () => {
         <div className={styles.contactBoxes}>
           <div>
             <h4>PEDIDOS:</h4>
-            <button>Button</button>
+            <button>IR</button>
           </div>
           <div>
             <h4>CONSULTAS:</h4>
-            <button>Button</button>
+            <button>IR</button>
           </div>
           <div>
             <h4>RESERVAS:</h4>
-            <button>Button</button>
+            <button>IR</button>
           </div>
         </div>
       </section>
