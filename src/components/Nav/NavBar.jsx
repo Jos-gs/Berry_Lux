@@ -1,30 +1,21 @@
+// src/components/Nav/NavBar.jsx
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
-  const navigate = useNavigate();
-
   return (
-    <div>
-      <div className="top-bar">
+    <nav className="navbar">
+      
+      <ul className="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
         <div className="logo">
-          {/* Botón del logo que redirige al home */}
-         
-        </div>
-        <div className="title">
-          <img src="./public/img/Recurso1.png" alt="" />
-        </div>
+        <img src="../../assets/logo.png" alt="Berry Lux Logo" /> {/* asegúrate de tener este logo */}
       </div>
-
-      <div className="menu-bar">
-        <span>INTRODUCCION</span>
-        <span>SUBESTACION ELECTRICA</span>
-        <span>BD-ST</span>
-        <span>CCO</span>
-        <span>CONCLUCION</span>
-      </div>
-    </div>
+        <li><a href="#redes">Redes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   );
 };
 
