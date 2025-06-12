@@ -3,6 +3,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #4b2e2e;
   background-color: #fffdfb;
+  padding-top: 175px; /* para dejar espacio al logo que sobresale del navbar */
 }
 
 /* Hero Section */
@@ -10,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 13rem 2rem;
   background-color: #F3F0EA;
   justify-content: space-evenly;
 }
@@ -226,14 +227,14 @@
 
 .vinoberrySection img {
   flex: 1;
-  max-width: 40%;
+  max-width: 30%;
   border-radius: 31px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .exfoberrySection img{
   flex: 1;
-  max-width: 40%;
+  max-width: 30%;
   border-radius: 31px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
