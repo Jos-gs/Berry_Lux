@@ -6,8 +6,8 @@ const NavBar = () => {
   return (
     <nav className="navbar">
   <div className="nav-links left">
-    <a href="#productos" className="nav-link">Site name</a>
-    <a href="#servicios" className="nav-link">Site name</a>
+    <a href="#home" className="nav-link">QUIENES SOMOS</a>
+    <a href="#productos" className="nav-link">PRODUCTOS</a>
   </div>
 <div className="logo-container">
     <button className="logo-button" onClick={() => window.location.href='#home'}>
@@ -15,8 +15,8 @@ const NavBar = () => {
     </button>
   </div>
   <div className="nav-links right">
-    <a href="#redes" className="nav-link">Site name</a>
-    <a href="#contacto" className="nav-link">Site name</a>
+    <a href="#redes" className="nav-link">REDES SOCIALES</a>
+    <a href="#contacto" className="nav-link">CONTACTANOS</a>
   </div>
 
   
