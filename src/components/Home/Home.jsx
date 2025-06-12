@@ -90,11 +90,15 @@ const Home = () => {
       {/* Hero Section */}
       <section id="redes" className={styles.heroSection}>
         <div>
-          <h1>Berry Lux</h1>
+          <h2>Facebook</h2>
           <p>Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling.</p>
-          <button>↓</button>
         </div>
-        <img src={productImage} alt="Berry Products" />
+        <img src={qrImage} alt="Berry Products" />
+        <div>
+          <h2>Instagram</h2>
+          <p>Subheading that sets up context, shares more info about the website, or generally gets people psyched to keep scrolling.</p>
+        </div>
+        <img src={qrImage} alt="Berry Products" />
       </section>
 
       {/* Contacto */}
@@ -115,7 +119,36 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+<footer className={styles.footer}>
+  <div className={styles.footerLeft}>
+    <p>@sites.BerryLux</p>
+    <div className={styles.socialIcons}>
+      <i className="fab fa-facebook-f"></i>
+      <i className="fab fa-linkedin-in"></i>
+      <i className="fab fa-youtube"></i>
+      <i className="fab fa-instagram"></i>
     </div>
+  </div>
+
+  <div className={styles.footerRight}>
+    <div>
+      <h4>Colaborador</h4>
+      <p>Gonzales S. Jose</p>
+      <p>Page</p>
+      <p>Page</p>
+    </div>
+    <div>
+      <h4>Libro de reclamaciones:</h4>
+      <a href="#">Link</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    
   );
 };
 
